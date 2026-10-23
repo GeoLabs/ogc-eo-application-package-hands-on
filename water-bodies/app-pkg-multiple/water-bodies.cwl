@@ -11,6 +11,7 @@ s:softwareVersion: 1.4.1
 requirements:
 - class: ScatterFeatureRequirement
 - class: SubworkflowFeatureRequirement
+hints:
 - class: cwltool:NetworkAccess
   networkAccess: true
 inputs:
