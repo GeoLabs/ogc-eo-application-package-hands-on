@@ -6,6 +6,7 @@ label: Water body detection based on NDWI and otsu threshold
 doc: Water body detection based on NDWI and otsu threshold
 $namespaces:
   s: https://schema.org/
+  ogc: http://www.opengis.net/def/media-type/ogc/1.0/
 s:softwareVersion: 1.4.1
 requirements:
 - class: ScatterFeatureRequirement
@@ -28,6 +29,7 @@ outputs:
   outputSource:
   - node_otsu/binary_mask_item
   type: File
+  format: ogc:geotiff
 steps:
   node_crop:
     run: crop.cwl

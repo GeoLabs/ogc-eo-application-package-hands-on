@@ -4,6 +4,7 @@ class: CommandLineTool
 id: crop
 $namespaces:
   s: https://schema.org/
+  ogc: http://www.opengis.net/def/media-type/ogc/1.0/
 s:softwareVersion: 1.4.1
 requirements:
   InlineJavascriptRequirement: {}
@@ -44,5 +45,6 @@ outputs:
     outputBinding:
       glob: '*.tif'
     type: File
+    format: ogc:geotiff
 $schemas:
 - http://schema.org/version/9.0/schemaorg-current-http.rdf
